@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  
+  h2(id='message')
+  
+  link(rel='stylesheet', href='/stylesheets/ttt.css')
+  table
+    - for (var x = 0; x < 3; x++)
+      tr
+        - for (var y= 0; y < 3; y++)
+          - var cell = x*3+y
+          td(id = 'cell_' + cell)
+            button(onclick = 'do_click('+cell+')')
+  script(src="/javascripts/ttt.js")
+  

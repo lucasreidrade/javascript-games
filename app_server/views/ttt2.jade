@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  
+  link(rel='stylesheet', href='/stylesheets/ttt.css')
+  table
+    - for (var x = 0; x < 3; x++)
+      tr
+        - for (var y= 0; y < 3; y++)
+          - var table = x*3+y
+          td(id = 'table_' + table)
+            table
+              - for (var k = 0; k < 3; k++)
+                tr 
+                  - for (var l= 0; l < 3; l++)
+                    - var cell = table*9+k*3+l
+                    td(id = 'cell_' +cell)
+                      button(onclick = 'do_click('+cell+')')=cell
+                      
+  script(src="/javascripts/game.js")
+  
