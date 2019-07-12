@@ -1,0 +1,40 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node4', '/usr/bin/npm-default', 'start' ]
+2 info using npm@2.15.11
+3 info using node@v4.9.1
+4 verbose run-script [ 'prestart', 'start', 'poststart' ]
+5 info prestart tictactoe-squared@0.0.0
+6 info start tictactoe-squared@0.0.0
+7 verbose unsafe-perm in lifecycle true
+8 info tictactoe-squared@0.0.0 Failed to exec start script
+9 verbose stack Error: tictactoe-squared@0.0.0 start: `nf start && node ./bin/www`
+9 verbose stack spawn ENOENT
+9 verbose stack     at ChildProcess.<anonymous> (/usr/lib64/node_modules/npm4/lib/utils/spawn.js:17:16)
+9 verbose stack     at emitTwo (events.js:87:13)
+9 verbose stack     at ChildProcess.emit (events.js:172:7)
+9 verbose stack     at maybeClose (internal/child_process.js:862:16)
+9 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:222:5)
+10 verbose pkgid tictactoe-squared@0.0.0
+11 verbose cwd /home/lucas/javascript-games
+12 error Linux 4.4.76-1-default
+13 error argv "/usr/bin/node4" "/usr/bin/npm-default" "start"
+14 error node v4.9.1
+15 error npm  v2.15.11
+16 error file sh
+17 error code ELIFECYCLE
+18 error errno ENOENT
+19 error syscall spawn
+20 error tictactoe-squared@0.0.0 start: `nf start && node ./bin/www`
+20 error spawn ENOENT
+21 error Failed at the tictactoe-squared@0.0.0 start script 'nf start && node ./bin/www'.
+21 error This is most likely a problem with the tictactoe-squared package,
+21 error not with npm itself.
+21 error Tell the author that this fails on your system:
+21 error     nf start && node ./bin/www
+21 error You can get information on how to open an issue for this project with:
+21 error     npm bugs tictactoe-squared
+21 error Or if that isn't available, you can get their info via:
+21 error
+21 error     npm owner ls tictactoe-squared
+21 error There is likely additional logging output above.
+22 verbose exit [ 1, true ]
